@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Pengumpulan Tugas</title>
+
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #4cc9f0;
+      --accent-hover: #43b3d5;
+      --bg: #f5f7fa;
+      --text: #22223b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* NAVBAR */
+    nav {
+      background: var(--primary);
+      padding: 15px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      font-size: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 50px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn-main {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-main:hover {
+      background: var(--accent-hover);
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* UPLOAD BOX */
+    .upload-box {
+      text-align: center;
+      padding: 40px 20px;
+      border: 2px dashed #ddd;
+      border-radius: 12px;
+    }
+
+    .upload-box p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .btn-upload {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn-upload:hover {
+      background: var(--accent-hover);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Bimbel Coding</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Upload</a>
+      <a href="#">Petunjuk</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Sistem Pengumpulan Tugas</h1>
+    <p>Kumpulkan tugas Anda dengan mudah dan cepat melalui sistem ini</p>
+
+    <a href="#upload" class="btn-main">Mulai Upload</a>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="container">
+
+    <!-- PETUNJUK -->
+    <div class="card">
+      <h2>Petunjuk Pengumpulan</h2>
+      <ul>
+        <li>Isi data dengan lengkap dan benar</li>
+        <li>Gunakan format nama file: Nama_Kelas_Tugas</li>
+        <li>Format file: PDF / DOCX / ZIP</li>
+        <li>Pastikan file sudah benar sebelum dikirim</li>
+      </ul>
+    </div>
+
+    <!-- UPLOAD -->
+    <div class="card" id="upload">
+      <h2>Upload Tugas</h2>
+
+      <div class="upload-box">
+        <p>Klik tombol di bawah ini untuk mengupload tugas Anda</p>
+
+        <!-- GANTI LINK DI SINI -->
+        <a href="https://forms.gle/ISI_LINK_KAMU" target="_blank" class="btn-upload">
+          Upload Sekarang
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Bimbel Coding | Sistem Pengumpulan Tugas Siswa
+  </footer>
+
+</body>
+</html>
